@@ -32,7 +32,7 @@
     "tailwindcss": "4.1.17",
     "typescript": "5.9.3",
     "vite": "^7.3.7",
-    "vite-plugin-singlefile": "2.3.0"
+    "vite-plugin-singlefile": "2.3.4"
   },
   "description": "Local-first privacy, network, DNS and AI security console",
   "overrides": {
