@@ -1,0 +1,42 @@
+{
+  "name": "privacyguard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cap:sync": "npx cap sync",
+    "cap:android": "npm run build && npx cap sync android && npx cap open android",
+    "cap:ios": "npm run build && npx cap sync ios && npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.6.10",
+    "@capacitor/core": "^7.6.10",
+    "@capacitor/ios": "^7.6.10",
+    "clsx": "2.1.1",
+    "lucide-react": "^1.66.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "tailwind-merge": "3.4.0",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.6.10",
+    "@tailwindcss/vite": "4.1.17",
+    "@types/node": "22.19.17",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.1",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3",
+    "vite": "^7.3.7",
+    "vite-plugin-singlefile": "2.3.0"
+  },
+  "description": "Local-first privacy, network, DNS and AI security console",
+  "overrides": {
+    "glob": "14.0.3",
+    "minimatch": "11.0.3"
+  }
+}

@@ -1,0 +1,37 @@
+name: Feature request
+description: Propose a privacy-preserving capability.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: Problem
+      description: What user problem should be solved?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Privacy and security impact
+      options:
+        - label: This does not require a cloud backend.
+        - label: This does not add analytics, ads, or hidden telemetry.
+        - label: This does not require payload decryption.
+        - label: I described any new permission, stored field, or outbound domain below.
+
+  - type: textarea
+    attributes:
+      label: New data, permissions, or network destinations
+      description: Write "none" if the proposal adds none.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Alternatives considered

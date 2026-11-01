@@ -1,0 +1,39 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Native Capacitor generated projects
+android/
+ios/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+key.properties
+google-services.json
+GoogleService-Info.plist
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs, coverage, local exports
+*.log
+coverage/
+privacyguard-logs*.json
+privacyguard-report*.*
+privacyguard-security-audit*.json
+
+# Temporary files
+.cache/
+.tmp/
+tmp/

@@ -1,0 +1,68 @@
+name: Bug report
+description: Report a reproducible defect without posting sensitive logs.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Do not include passwords, tokens, private domains, real network exports,
+        signing keys, or personal data. Security vulnerabilities must be reported privately
+        through the Security tab, not here.
+
+  - type: checkboxes
+    attributes:
+      label: Safety check
+      options:
+        - label: This is not a security vulnerability.
+          required: true
+        - label: I removed personal and sensitive data from this report.
+          required: true
+
+  - type: input
+    attributes:
+      label: Version or commit
+      placeholder: v1.0.0 or commit SHA
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Platform
+      options:
+        - Web / desktop browser
+        - Android PWA
+        - Android Capacitor package
+        - iPhone / iPad PWA
+        - iOS Capacitor package
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Reproduction steps
+      description: Use example.com or another non-sensitive test domain.
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Sanitized evidence
+      description: Screenshots are welcome only after removing domains, paths, IPs, and identifiers.
